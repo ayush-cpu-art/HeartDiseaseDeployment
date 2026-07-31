@@ -1,27 +1,29 @@
 # ❤️ Heart Disease Prediction System
 
-An end-to-end Machine Learning project that predicts whether a patient is at risk of heart disease based on clinical parameters. The application is built using **Python**, **Scikit-learn**, and **Flask**, deployed on **Render**, and managed using **GitHub**.
+An end-to-end Machine Learning web application that predicts whether a patient is at risk of heart disease using clinical parameters. The project is built with **Python**, **Scikit-learn**, and **Flask**, version-controlled with **GitHub**, and deployed on **Render**.
 
 ---
 
 ## 📌 Project Overview
 
-Heart disease is one of the leading causes of death worldwide. This project uses a Machine Learning classification model to predict the likelihood of heart disease from patient health information.
+Heart disease is one of the leading causes of death worldwide. This application uses a trained **Random Forest Classifier** to predict the likelihood of heart disease based on patient health data.
 
-The application allows users to enter patient details through a web interface or send data as JSON to a REST API and instantly receive a prediction.
+Users can either:
+- Enter patient details through a simple web interface.
+- Send JSON data to the REST API and receive predictions instantly.
 
 ---
 
 ## 🚀 Features
 
-- Data preprocessing using Pandas
+- Heart Disease Prediction using Machine Learning
+- Data preprocessing with Pandas
 - Random Forest Classification Model
 - Model serialization using Joblib
 - Flask REST API
-- User-friendly web interface
-- JSON API support
-- GitHub version control
+- Responsive and user-friendly interface
 - Cloud deployment using Render
+- Version control using GitHub
 
 ---
 
@@ -29,12 +31,12 @@ The application allows users to enter patient details through a web interface or
 
 - Python
 - Flask
+- Scikit-learn
 - Pandas
 - NumPy
-- Scikit-learn
 - Joblib
-- HTML
-- CSS
+- HTML5
+- CSS3
 - Git
 - GitHub
 - Render
@@ -43,7 +45,7 @@ The application allows users to enter patient details through a web interface or
 
 ## 📂 Project Structure
 
-```
+```text
 HeartDiseaseDeployment/
 │
 ├── app.py
@@ -61,9 +63,7 @@ HeartDiseaseDeployment/
 
 ## 📊 Dataset
 
-**Heart Disease Prediction Dataset**
-
-The dataset contains patient medical information such as:
+The project uses the **Heart Disease Prediction Dataset** containing patient clinical information such as:
 
 - Age
 - Sex
@@ -73,52 +73,52 @@ The dataset contains patient medical information such as:
 - Fasting Blood Sugar
 - Rest ECG
 - Maximum Heart Rate
-- Exercise Induced Angina
+- Exercise-Induced Angina
 - Old Peak
 - Slope
-- Number of Major Vessels
+- Number of Major Vessels (CA)
 - Thalassemia
 
-Target:
+**Target Variable**
 
-- **0 → No Heart Disease**
-- **1 → Heart Disease**
+- `0` → No Heart Disease
+- `1` → Heart Disease
 
 ---
 
 ## ⚙️ Installation
 
-Clone the repository
+Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/HeartDiseaseDeployment.git
+git clone https://github.com/ayush-cpu-art/HeartDiseaseDeployment.git
 ```
 
-Move into the project folder
+Move into the project directory:
 
 ```bash
 cd HeartDiseaseDeployment
 ```
 
-Install dependencies
+Install the required packages:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the model training
+Train the model:
 
 ```bash
 python train_model.py
 ```
 
-Start the Flask application
+Run the Flask application:
 
 ```bash
 python app.py
 ```
 
-Open
+Open your browser:
 
 ```
 http://127.0.0.1:5000
@@ -128,29 +128,25 @@ http://127.0.0.1:5000
 
 ## 🌐 API Endpoint
 
-### POST
+### POST `/predict`
 
-```
-/predict
-```
-
-Example JSON
+Example JSON Input
 
 ```json
 {
-  "age":63,
-  "sex":1,
-  "cp":3,
-  "trestbps":145,
-  "chol":233,
-  "fbs":1,
-  "restecg":0,
-  "thalach":150,
-  "exang":0,
-  "oldpeak":2.3,
-  "slope":0,
-  "ca":0,
-  "thal":1
+  "age": 63,
+  "sex": 1,
+  "cp": 3,
+  "trestbps": 145,
+  "chol": 233,
+  "fbs": 1,
+  "restecg": 0,
+  "thalach": 150,
+  "exang": 0,
+  "oldpeak": 2.3,
+  "slope": 0,
+  "ca": 0,
+  "thal": 1
 }
 ```
 
@@ -158,23 +154,23 @@ Example Response
 
 ```json
 {
-    "prediction":"Heart Disease Detected"
+  "prediction": "Heart Disease Detected"
 }
 ```
 
 ---
 
-## 📈 Model
+## 🤖 Machine Learning Model
 
-Algorithm Used:
+**Algorithm Used**
 
 - Random Forest Classifier
 
-Evaluation Metric:
+**Evaluation Metric**
 
 - Accuracy Score
 
-The trained model is saved as:
+The trained model is stored as:
 
 ```
 model.pkl
@@ -182,39 +178,25 @@ model.pkl
 
 ---
 
-## 📸 Screenshots
+## 🌍 Live Demo
 
-### Home Page
+**Render Deployment**
 
-_Add screenshot here_
-
-### Prediction Result
-
-_Add screenshot here_
-
----
-
-## 🔗 Live Demo
-
-Render Deployment
-
-```
-https://your-render-link.onrender.com
-```
+https://heartdiseasedeployment-3g72.onrender.com
 
 ---
 
 ## 💻 GitHub Repository
 
-```
-https://github.com/your-username/HeartDiseaseDeployment
-```
+https://github.com/ayush-cpu-art/HeartDiseaseDeployment
 
 ---
 
+
+
 ## 📝 Conclusion
 
-This project demonstrates a complete end-to-end machine learning workflow, from data preprocessing and model training to deployment as a Flask web application. The Random Forest classifier provides reliable predictions for heart disease risk, while GitHub and Render simplify version control and cloud deployment. The project also introduces fundamental MLOps concepts such as model serialization, API development, and production deployment.
+This project demonstrates the complete machine learning deployment workflow, including data preprocessing, model training, serialization, API development, version control, and cloud deployment. The Random Forest classifier provides reliable predictions, while Flask and Render enable the model to be served as a live web application. The project also introduces essential MLOps concepts such as model packaging, deployment, and serving predictions through a REST API.
 
 ---
 
@@ -222,4 +204,4 @@ This project demonstrates a complete end-to-end machine learning workflow, from 
 
 **Ayush**
 
-B.Tech AI & ML
+B.Tech – Artificial Intelligence & Machine Learning
