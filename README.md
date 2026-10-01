@@ -1,10 +1,10 @@
-# ❤️ Heart Disease Prediction System
+#  Heart Disease Prediction System
 
 An end-to-end Machine Learning web application that predicts whether a patient is at risk of heart disease using clinical parameters. The project is built with **Python**, **Scikit-learn**, and **Flask**, version-controlled with **GitHub**, and deployed on **Render**.
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 Heart disease is one of the leading causes of death worldwide. This application uses a trained **Random Forest Classifier** to predict the likelihood of heart disease based on patient health data.
 
@@ -14,7 +14,7 @@ Users can either:
 
 ---
 
-## 🚀 Features
+##  Features
 
 - Heart Disease Prediction using Machine Learning
 - Data preprocessing with Pandas
@@ -27,7 +27,7 @@ Users can either:
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - Python
 - Flask
@@ -43,7 +43,7 @@ Users can either:
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 HeartDiseaseDeployment/
@@ -61,7 +61,7 @@ HeartDiseaseDeployment/
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 The project uses the **Heart Disease Prediction Dataset** containing patient clinical information such as:
 
@@ -126,7 +126,7 @@ http://127.0.0.1:5000
 
 ---
 
-## 🌐 API Endpoint
+##  API Endpoint
 
 ### POST `/predict`
 
@@ -160,7 +160,7 @@ Example Response
 
 ---
 
-## 🤖 Machine Learning Model
+##  Machine Learning Model
 
 **Algorithm Used**
 
@@ -178,7 +178,7 @@ model.pkl
 
 ---
 
-## 🌍 Live Demo
+##  Live Demo
 
 **Render Deployment**
 
@@ -186,7 +186,7 @@ https://heartdiseasedeployment-3g72.onrender.com
 
 ---
 
-## 💻 GitHub Repository
+##  GitHub Repository
 
 https://github.com/ayush-cpu-art/HeartDiseaseDeployment
 
@@ -194,7 +194,7 @@ https://github.com/ayush-cpu-art/HeartDiseaseDeployment
 
 
 
-## 📝 Conclusion
+##  Conclusion
 
 This project demonstrates the complete machine learning deployment workflow, including data preprocessing, model training, serialization, API development, version control, and cloud deployment. The Random Forest classifier provides reliable predictions, while Flask and Render enable the model to be served as a live web application. The project also introduces essential MLOps concepts such as model packaging, deployment, and serving predictions through a REST API.
 
